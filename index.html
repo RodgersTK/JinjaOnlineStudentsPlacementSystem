@@ -6,8 +6,8 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@1,700&display=swap" rel="stylesheet">
-
+    <!--<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@1,700&display=swap" rel="stylesheet">
+-->
 </head>
 <body>
     
@@ -21,7 +21,7 @@
           </div>
           
           <!-- Middle: System Name -->
-        <div class="text-center" style="font-family: 'Inter', sans-serif;">
+        <div class="text-center" style="font-family: 'Inter', sans-serif;"> <!-- Inter font from google fonts has been disabled -->
           <h1 class="text-4xl font-bold">jinja System</h1>  
           <h1 class="text-2xl font-bold">school online placement system</h1>
         </div>  
@@ -34,8 +34,15 @@
       
         </div>
       </header>
-      
-<form class=""><!-- Form to capture student details -->
+
+        <!-- Hidding the add student forms so that they only apperar when the + is clicked-->
+      <!-- Toggle Button to add a student -->
+       <button id="new_toggle_icon" 
+      class="flex items-center text-black-500 text-2xl font-bold cursor-pointer focus:outline-none">
+      <span class="text-green-500 text-6xl text-4xl mr-2">+</span>
+      <span>New Student</span>
+  </button>
+<form class="hidden"><!-- Form to capture student details -->
   <div class="grid gap-6 mb-6 md:grid-cols-2">
       <div>
           <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">First name</label>
@@ -80,7 +87,15 @@
   <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
 </form>
 
-<form class=""><!-- Form to capture school details -->
+  <!-- Hidding the add School forms so that they only apperar when the + is clicked-->
+  <!-- Toggle Button to add a school -->
+  <button id="new_toggle_icon" 
+    class="flex items-center text-black-500 text-2xl font-bold cursor-pointer focus:outline-none">
+    <span class="text-green-500 text-6xl mr-2">+</span>
+    <span>New School</span>
+</button>
+
+<form class="hidden"><!-- Form to capture school details -->
   <div class="grid gap-6 mb-6 md:grid-cols-2">
       <div>
           <label for="school_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">School name</label>
