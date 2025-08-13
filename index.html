@@ -35,7 +35,7 @@
         </div>
       </header>
       
-<form class="">
+<form class=""><!-- Form to capture student details -->
   <div class="grid gap-6 mb-6 md:grid-cols-2">
       <div>
           <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">First name</label>
@@ -46,41 +46,67 @@
           <input type="text" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
       </div>
       <div>
-          <label for="surname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Sur name</label>
-          <input type="text" id="surname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+          <label for="sur_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Sur name</label>
+          <input type="text" id="sur_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
       </div>  
       <div>
           <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Phone number</label>
           <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" pattern="[0-7][0-9]-[0-9][0-9]-[0-9][0-9]" required />
       </div>
       <div>
-          <label for="admissionnumber" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Admission Number</label>
-          <input type="url" id="admissionnumber" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+          <label for="admission_number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Admission Number</label>
+          <input type="url" id="admission_number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
       </div>
       <div>
-          <label for="yearofstudy" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Year of study</label>
-          <input type="text" id="yearofstudy" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+          <label for="year_of_study" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Year of study</label>
+          <input type="text" id="year_of_study" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
       </div>
       <div>
-        <label for="collegeclass" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">College Class</label>
-        <input type="text" id="collegeclass" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+        <label for="college_class" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">College Class</label>
+        <input type="text" id="college_class" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
     </div>
-    <div class="hidden">
+    <div class="hidden"> <!-- hidden inputs for admins -->
     <div>
-      <label for="schoolallocated" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">School allocated</label>
-      <input type="text" id="schoolallocated" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+      <label for="school_allocated" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">School allocated</label>
+      <input type="text" id="school_allocated" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
   </div>
     <div>
-      <label for="allocatedgrade" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Grade allocated</label>
-      <input type="text" id="allocatedgrade" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+      <label for="allocated_grade" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Grade allocated</label>
+      <input type="text" id="allocated_grade" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
   </div>
   </div>
   </div>
-  
-  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Place Student</button>
+  <!-- Submission button for the student -->
+  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
 </form>
 
-    
+<form class=""><!-- Form to capture school details -->
+  <div class="grid gap-6 mb-6 md:grid-cols-2">
+      <div>
+          <label for="school_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">School name</label>
+          <input type="text" id="school_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+      </div>
+      <div>
+          <label for="number_of_students" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Number of students</label>
+          <input type="number" id="number_of_students" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+      </div>
+      <div>
+          <label for="population" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Population</label>
+          <input type="number" id="population" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+      </div>  
+      <div>
+          <label for="county" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">County</label>
+          <input type="text" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder=""  required />
+      </div>
+      <div>
+          <label for="admission_number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Subcounty</label>
+          <input type="text" id="admission_number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+      </div>
+      
+  </div>
+  <!-- Submission button for the school details -->
+  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+</form>  
     
       <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   
