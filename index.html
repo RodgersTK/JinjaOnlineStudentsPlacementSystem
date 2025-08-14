@@ -57,6 +57,10 @@
           <input type="text" id="sur_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
       </div>  
       <div>
+        <label for="gender" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black"> Gender</label>
+        <input type="text" id="gender" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+    </div> 
+      <div>
           <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Phone number</label>
           <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" pattern="[0-7][0-9]-[0-9][0-9]-[0-9][0-9]" required />
       </div>
@@ -72,7 +76,7 @@
         <label for="college_class" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">College Class</label>
         <input type="text" id="college_class" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
     </div>
-    <div class="hidden"> <!-- hidden inputs for admins -->
+    <div class=""> <!-- hidden inputs for admins -->
     <div>
       <label for="school_allocated" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">School allocated</label>
       <input type="text" id="school_allocated" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
@@ -122,6 +126,98 @@
   <!-- Submission button for the school details -->
   <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
 </form>  
+
+
+
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+  <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <tr>
+              <th scope="col" class="px-6 py-3">
+                  Name 
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Gender
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Adm No.
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  School placed
+              </th>
+              <th scope="col" class="px-6 py-3">
+                Grade placed
+            </th>
+              <th scope="col" class="px-6 py-3">
+                  Action
+              </th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  Rodgers Tyson Kariuki
+              </th>
+              <td class="px-6 py-4">
+                  Male
+              </td>
+              <td class="px-6 py-4">
+                  30744
+              </td>
+              <td class="px-6 py-4">
+                Ngimary Pri School
+            </td>
+              <td class="px-6 py-4">
+                  Grade 2
+              </td>
+              <td class="px-6 py-4">
+                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+              </td>
+          </tr>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  John Mark Doe
+              </th>
+              <td class="px-6 py-4">
+                  Male
+              </td>
+              <td class="px-6 py-4">
+                56789
+              </td>
+              <td class="px-6 py-4">
+                Kigari Pri School
+            </td>
+              <td class="px-6 py-4">
+                Grade 4              
+              </td>
+              <td class="px-6 py-4">
+                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+              </td>
+          </tr>
+          <tr class="bg-white dark:bg-gray-800">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  Mary Maina Ireri
+              </th>
+              <td class="px-6 py-4">
+                  Female
+              </td>
+              <td class="px-6 py-4">
+                  37654
+              </td>
+              <td class="px-6 py-4">
+                Kiangoci Pri Sch
+            </td>
+              <td class="px-6 py-4">
+                Grade 6
+              </td>
+              <td class="px-6 py-4">
+                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+
     
       <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script> <!-- External flowbite CDN javascript file-->
       
