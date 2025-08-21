@@ -16,19 +16,19 @@ document.getElementById("student_form").addEventListener("submit", (event) => {
     event.preventDefault();
 
     let formData = captureUserData();        //create a variable to store the result of the function captureUserData
-   /* if (selectedRow === null)  {            //ensure the selected row is strictly equal
+    if (selectedRow === null)  {            //ensure the selected row is strictly equal
         insertNewRecord(formData);
     } else {
         updateRecord(formData);
-    } */
-    //clearForm();
+    } 
+    clearForm();
 }); 
 
 let selectedRow = null;
 
 // capture the user input
 function captureUserData() {
-    let data = {
+    return {
         first_name : document.getElementById("first_name").value, 
         last_name : document.getElementById("last_name").value,
         sur_name : document.getElementById("sur_name").value,
@@ -40,7 +40,21 @@ function captureUserData() {
         school_allocated : document.getElementById("school_allocated").value,
         allocated_grade : document.getElementById("allocated_grade").value
     };
-    console.log("Captured data:", data); 
-    return data;
 }
+
+// creating a new record to the table
+function insertNewRecord(data) {
+    let table = document.getElementById("students_list").getElementsByTagName("tbody")[0];
+    let newRow = table.insertRow();
+    let fullName = data.first_name + " " + data.last_name + " " + data.sur_name;
+
+    newRow.insertCell(0).innerHTML = fullName; // Name column
+    newRow.insertCell(1).innerHTML = data.gender; // Gender column
+    newRow.insertCell(2).innerHTML = data.admission_number; // Adm No column
+    newRow.insertCell(3).innerHTML = data.school_allocated; // School placed
+    newRow.insertCell(4).innerHTML = data.allocated_grade; // Grade placed
+    newRow.insertCell(5).innerHTML = `<a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>`; // Action column
+}
+
+
 
