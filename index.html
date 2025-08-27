@@ -171,8 +171,11 @@
                   Grade 2
               </td>
               <td class="px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-              </td>
+                <button onclick="editRecord(this)" 
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
+                Edit
+              </button>           
+            </td>
           </tr>
           <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
               <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -191,8 +194,11 @@
                 Grade 4              
               </td>
               <td class="px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-              </td>
+                <button onclick="editRecord(this, event)" 
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
+                Edit
+              </button>              
+            </td>
           </tr>
           <tr class="bg-white dark:bg-gray-800">
               <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -211,7 +217,10 @@
                 Grade 6
               </td>
               <td class="px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                <button onclick="editRecord(this, event)" 
+                  class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
+                  Edit
+                </button>
               </td>
           </tr>
       </tbody>

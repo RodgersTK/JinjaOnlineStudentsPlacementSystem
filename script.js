@@ -53,8 +53,29 @@ function insertNewRecord(data) {
     newRow.insertCell(2).innerHTML = data.admission_number; // Adm No column
     newRow.insertCell(3).innerHTML = data.school_allocated; // School placed
     newRow.insertCell(4).innerHTML = data.allocated_grade; // Grade placed
-    newRow.insertCell(5).innerHTML = `<a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>`; // Action column
+    newRow.insertCell(5).innerHTML = `<a href="#" onclick="editRecord(this)" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>`; // Action column
 }
+
+// to edit an entry 
+function editRecord(button) {
+    selectedRow = button.closest("tr");
+
+    // 1. Show the form (remove hidden if it exists)
+    const form = document.getElementById("student_form");
+    form.classList.remove("hidden");
+
+    document.getElementById("first_name").value = selectedRow.cells[0].innerHTML;
+    document.getElementById("last_name").value = selectedRow.cells[1].innerHTML;
+    document.getElementById("sur_name").value = selectedRow.cells[2].innerHTML;
+    document.getElementById("gender").value = selectedRow.cells[3].innerHTML;
+    document.getElementById("phone").value = selectedRow.cells[4].innerHTML;
+    document.getElementById("admission_number").value = selectedRow.cells[5].innerHTML;
+    document.getElementById("year_of_study").value = selectedRow.cells[6].innerHTML;
+    document.getElementById("college_class").value = selectedRow.cells[7].innerHTML;
+    document.getElementById("school_allocated").value = selectedRow.cells[8].innerHTML;
+    document.getElementById("allocated_grade").value = selectedRow.cells[9].innerHTML;
+  
+}    
 
 
 
